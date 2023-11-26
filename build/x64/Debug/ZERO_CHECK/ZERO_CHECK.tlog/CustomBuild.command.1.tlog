@@ -1,0 +1,10 @@
+^C:\USERS\LIBER\ONEDRIVE\РАБОЧИЙ СТОЛ\OPENGL\BUILD\CMAKEFILES\9433CCAC2A257EF91423EDF3CDEE84DB\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/liber/OneDrive/Рабочий стол/OpenGL" "-BC:/Users/liber/OneDrive/Рабочий стол/OpenGL/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/liber/OneDrive/Рабочий стол/OpenGL/build/OpenVR.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,3 @@
+C:/Users/liber/OneDrive/Рабочий стол/OpenGL/CMakeFiles/OpenVR.dir
+C:/Users/liber/OneDrive/Рабочий стол/OpenGL/CMakeFiles/ALL_BUILD.dir
+C:/Users/liber/OneDrive/Рабочий стол/OpenGL/CMakeFiles/ZERO_CHECK.dir
