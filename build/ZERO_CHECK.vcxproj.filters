@@ -6,8 +6,40 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <None Include="C:\Users\liber\OneDrive\Рабочий стол\OpenGL\external\glad\CMakeLists.txt">
+      <Filter>Buildsystem Input Files\external\glad</Filter>
+    </None>
+    <None Include="C:\Users\liber\OneDrive\Рабочий стол\OpenGL\external\glfw\CMake\glfw3.pc.in">
+      <Filter>Buildsystem Input Files\external\glfw\CMake</Filter>
+    </None>
+    <None Include="C:\Users\liber\OneDrive\Рабочий стол\OpenGL\external\glfw\CMake\glfw3Config.cmake.in">
+      <Filter>Buildsystem Input Files\external\glfw\CMake</Filter>
+    </None>
+    <None Include="C:\Users\liber\OneDrive\Рабочий стол\OpenGL\external\glfw\CMakeLists.txt">
+      <Filter>Buildsystem Input Files\external\glfw</Filter>
+    </None>
+    <None Include="C:\Users\liber\OneDrive\Рабочий стол\OpenGL\external\glfw\src\CMakeLists.txt">
+      <Filter>Buildsystem Input Files\external\glfw\src</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
     <Filter Include="CMake Rules">
       <UniqueIdentifier>{4FCCA7EC-9CC0-306F-A3AD-27F9BB5AE94D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{788016A2-4E04-39EE-B989-E92272E1BFC7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Buildsystem Input Files\external\glad">
+      <UniqueIdentifier>{2C03B188-D2D8-3EFA-9382-DE75C9AB6C72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Buildsystem Input Files\external\glfw">
+      <UniqueIdentifier>{5CE2FCE0-5846-3DAF-9F40-A4CEF5C1B3FA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Buildsystem Input Files\external\glfw\CMake">
+      <UniqueIdentifier>{5C8CC50A-391A-3698-A018-7C5451FED21F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Buildsystem Input Files\external\glfw\src">
+      <UniqueIdentifier>{4D73D546-AB8C-3E88-BFE7-B6DF04A24824}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

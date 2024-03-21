@@ -217,3 +217,946 @@ events:
         
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "external/glfw/CMakeLists.txt:56 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "C:/Users/liber/OneDrive/\u0420\u0430\u0431\u043e\u0447\u0438\u0439 \u0441\u0442\u043e\u043b/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-z430se"
+      binary: "C:/Users/liber/OneDrive/\u0420\u0430\u0431\u043e\u0447\u0438\u0439 \u0441\u0442\u043e\u043b/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-z430se"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/liber/OneDrive/\u0420\u0430\u0431\u043e\u0447\u0438\u0439 \u0441\u0442\u043e\u043b/OpenGL/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/liber/OneDrive/Рабочий стол/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-z430se'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_6d5e8.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.4.1+9a89d02ff for .NET Framework
+        Сборка начата 26.11.2023 14:40:07.
+        Проект "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z430se\\cmTC_6d5e8.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        PrepareForBuild:
+          Создание каталога "cmTC_6d5e8.dir\\Debug\\".
+          Создание каталога "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z430se\\Debug\\".
+          Создание каталога "cmTC_6d5e8.dir\\Debug\\cmTC_6d5e8.tlog\\".
+        InitializeBuildStatus:
+          Создание "cmTC_6d5e8.dir\\Debug\\cmTC_6d5e8.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6d5e8.dir\\Debug\\\\" /Fd"cmTC_6d5e8.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z430se\\src.c"
+          Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.34.31937 для x64
+          src.c
+          (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6d5e8.dir\\Debug\\\\" /Fd"cmTC_6d5e8.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z430se\\src.c"
+        C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z430se\\src.c(1,10): fatal  error C1083: Не удается открыть файл включение: pthread.h: No such file or directory, [C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z430se\\cmTC_6d5e8.vcxproj]
+        Сборка проекта "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z430se\\cmTC_6d5e8.vcxproj" завершена (целевые объекты по умолчанию) с ошибкой.
+        
+        Ошибка сборки.
+        
+        "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z430se\\cmTC_6d5e8.vcxproj" (целевой объект по умолчанию) (1) ->
+        (Целевой объект ClCompile) -> 
+          C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z430se\\src.c(1,10): fatal  error C1083: Не удается открыть файл включение: pthread.h: No such file or directory, [C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z430se\\cmTC_6d5e8.vcxproj]
+        
+            Предупреждений: 0
+            Ошибок: 1
+        
+        Прошло времени 00:00:00.60
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "external/glfw/CMakeLists.txt:56 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "C:/Users/liber/OneDrive/\u0420\u0430\u0431\u043e\u0447\u0438\u0439 \u0441\u0442\u043e\u043b/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-qgdwth"
+      binary: "C:/Users/liber/OneDrive/\u0420\u0430\u0431\u043e\u0447\u0438\u0439 \u0441\u0442\u043e\u043b/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-qgdwth"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/liber/OneDrive/\u0420\u0430\u0431\u043e\u0447\u0438\u0439 \u0441\u0442\u043e\u043b/OpenGL/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/liber/OneDrive/Рабочий стол/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-qgdwth'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_88471.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.4.1+9a89d02ff for .NET Framework
+        Сборка начата 26.11.2023 14:40:08.
+        Проект "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qgdwth\\cmTC_88471.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        PrepareForBuild:
+          Создание каталога "cmTC_88471.dir\\Debug\\".
+          Создание каталога "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qgdwth\\Debug\\".
+          Создание каталога "cmTC_88471.dir\\Debug\\cmTC_88471.tlog\\".
+        InitializeBuildStatus:
+          Создание "cmTC_88471.dir\\Debug\\cmTC_88471.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_88471.dir\\Debug\\\\" /Fd"cmTC_88471.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qgdwth\\CheckFunctionExists.c"
+          Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.34.31937 для x64
+          CheckFunctionExists.c
+          (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_88471.dir\\Debug\\\\" /Fd"cmTC_88471.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qgdwth\\CheckFunctionExists.c"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qgdwth\\Debug\\cmTC_88471.exe" /INCREMENTAL /ILK:"cmTC_88471.dir\\Debug\\cmTC_88471.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/liber/OneDrive/Рабочий стол/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-qgdwth/Debug/cmTC_88471.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/liber/OneDrive/Рабочий стол/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-qgdwth/Debug/cmTC_88471.lib" /MACHINE:X64  /machine:x64 cmTC_88471.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: не удается открыть файл "pthreads.lib" [C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qgdwth\\cmTC_88471.vcxproj]
+        Сборка проекта "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qgdwth\\cmTC_88471.vcxproj" завершена (целевые объекты по умолчанию) с ошибкой.
+        
+        Ошибка сборки.
+        
+        "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qgdwth\\cmTC_88471.vcxproj" (целевой объект по умолчанию) (1) ->
+        (Целевой объект Link) -> 
+          LINK : fatal error LNK1104: не удается открыть файл "pthreads.lib" [C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qgdwth\\cmTC_88471.vcxproj]
+        
+            Предупреждений: 0
+            Ошибок: 1
+        
+        Прошло времени 00:00:00.78
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "external/glfw/CMakeLists.txt:56 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "C:/Users/liber/OneDrive/\u0420\u0430\u0431\u043e\u0447\u0438\u0439 \u0441\u0442\u043e\u043b/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-79aemr"
+      binary: "C:/Users/liber/OneDrive/\u0420\u0430\u0431\u043e\u0447\u0438\u0439 \u0441\u0442\u043e\u043b/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-79aemr"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/liber/OneDrive/\u0420\u0430\u0431\u043e\u0447\u0438\u0439 \u0441\u0442\u043e\u043b/OpenGL/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/liber/OneDrive/Рабочий стол/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-79aemr'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_5cb42.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.4.1+9a89d02ff for .NET Framework
+        Сборка начата 26.11.2023 14:40:09.
+        Проект "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-79aemr\\cmTC_5cb42.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        PrepareForBuild:
+          Создание каталога "cmTC_5cb42.dir\\Debug\\".
+          Создание каталога "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-79aemr\\Debug\\".
+          Создание каталога "cmTC_5cb42.dir\\Debug\\cmTC_5cb42.tlog\\".
+        InitializeBuildStatus:
+          Создание "cmTC_5cb42.dir\\Debug\\cmTC_5cb42.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5cb42.dir\\Debug\\\\" /Fd"cmTC_5cb42.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-79aemr\\CheckFunctionExists.c"
+          Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.34.31937 для x64
+          CheckFunctionExists.c
+          (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5cb42.dir\\Debug\\\\" /Fd"cmTC_5cb42.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-79aemr\\CheckFunctionExists.c"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-79aemr\\Debug\\cmTC_5cb42.exe" /INCREMENTAL /ILK:"cmTC_5cb42.dir\\Debug\\cmTC_5cb42.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/liber/OneDrive/Рабочий стол/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-79aemr/Debug/cmTC_5cb42.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/liber/OneDrive/Рабочий стол/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-79aemr/Debug/cmTC_5cb42.lib" /MACHINE:X64  /machine:x64 cmTC_5cb42.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: не удается открыть файл "pthread.lib" [C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-79aemr\\cmTC_5cb42.vcxproj]
+        Сборка проекта "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-79aemr\\cmTC_5cb42.vcxproj" завершена (целевые объекты по умолчанию) с ошибкой.
+        
+        Ошибка сборки.
+        
+        "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-79aemr\\cmTC_5cb42.vcxproj" (целевой объект по умолчанию) (1) ->
+        (Целевой объект Link) -> 
+          LINK : fatal error LNK1104: не удается открыть файл "pthread.lib" [C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-79aemr\\cmTC_5cb42.vcxproj]
+        
+            Предупреждений: 0
+            Ошибок: 1
+        
+        Прошло времени 00:00:00.67
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake:211 (message)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      The system is: Windows - 10.0.19045 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      MSBuild version 17.4.1+9a89d02ff for .NET Framework
+      Сборка начата 26.11.2023 17:12:21.
+      Проект "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\3.27.0\\CompilerIdC\\CompilerIdC.vcxproj" в узле 1 (целевые объекты по умолчанию).
+      PrepareForBuild:
+        Создание каталога "Debug\\".
+        Создание каталога "Debug\\CompilerIdC.tlog\\".
+      InitializeBuildStatus:
+        Создание "Debug\\CompilerIdC.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\3.27.0\\CompilerIdC\\CompilerIdC.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Файл "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" удаляется.
+        Обращение к "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
+      Сборка проекта "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\3.27.0\\CompilerIdC\\CompilerIdC.vcxproj" завершена (целевые объекты по умолчанию).
+      
+      Сборка успешно завершена.
+          Предупреждений: 0
+          Ошибок: 0
+      
+      Прошло времени 00:00:00.81
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/Users/liber/OneDrive/Рабочий стол/OpenGL/build/CMakeFiles/3.27.0/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      MSBuild version 17.4.1+9a89d02ff for .NET Framework
+      Сборка начата 26.11.2023 17:12:22.
+      Проект "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\3.27.0\\CompilerIdCXX\\CompilerIdCXX.vcxproj" в узле 1 (целевые объекты по умолчанию).
+      PrepareForBuild:
+        Создание каталога "Debug\\".
+        Создание каталога "Debug\\CompilerIdCXX.tlog\\".
+      InitializeBuildStatus:
+        Создание "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\3.27.0\\CompilerIdCXX\\CompilerIdCXX.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Файл "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" удаляется.
+        Обращение к "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
+      Сборка проекта "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\3.27.0\\CompilerIdCXX\\CompilerIdCXX.vcxproj" завершена (целевые объекты по умолчанию).
+      
+      Сборка успешно завершена.
+          Предупреждений: 0
+          Ошибок: 0
+      
+      Прошло времени 00:00:00.62
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/liber/OneDrive/Рабочий стол/OpenGL/build/CMakeFiles/3.27.0/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/liber/OneDrive/\u0420\u0430\u0431\u043e\u0447\u0438\u0439 \u0441\u0442\u043e\u043b/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-pldb76"
+      binary: "C:/Users/liber/OneDrive/\u0420\u0430\u0431\u043e\u0447\u0438\u0439 \u0441\u0442\u043e\u043b/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-pldb76"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/liber/OneDrive/Рабочий стол/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-pldb76'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_da529.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.4.1+9a89d02ff for .NET Framework
+        Сборка начата 26.11.2023 17:12:23.
+        Проект "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pldb76\\cmTC_da529.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        PrepareForBuild:
+          Создание каталога "cmTC_da529.dir\\Debug\\".
+          Создание каталога "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pldb76\\Debug\\".
+          Создание каталога "cmTC_da529.dir\\Debug\\cmTC_da529.tlog\\".
+        InitializeBuildStatus:
+          Создание "cmTC_da529.dir\\Debug\\cmTC_da529.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_da529.dir\\Debug\\\\" /Fd"cmTC_da529.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"
+          Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.34.31937 для x64
+          CMakeCCompilerABI.c
+          (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_da529.dir\\Debug\\\\" /Fd"cmTC_da529.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pldb76\\Debug\\cmTC_da529.exe" /INCREMENTAL /ILK:"cmTC_da529.dir\\Debug\\cmTC_da529.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/liber/OneDrive/Рабочий стол/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-pldb76/Debug/cmTC_da529.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/liber/OneDrive/Рабочий стол/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-pldb76/Debug/cmTC_da529.lib" /MACHINE:X64  /machine:x64 cmTC_da529.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_da529.vcxproj -> C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pldb76\\Debug\\cmTC_da529.exe
+        FinalizeBuildStatus:
+          Файл "cmTC_da529.dir\\Debug\\cmTC_da529.tlog\\unsuccessfulbuild" удаляется.
+          Обращение к "cmTC_da529.dir\\Debug\\cmTC_da529.tlog\\cmTC_da529.lastbuildstate".
+        Сборка проекта "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pldb76\\cmTC_da529.vcxproj" завершена (целевые объекты по умолчанию).
+        
+        Сборка успешно завершена.
+            Предупреждений: 0
+            Ошибок: 0
+        
+        Прошло времени 00:00:00.58
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/liber/OneDrive/\u0420\u0430\u0431\u043e\u0447\u0438\u0439 \u0441\u0442\u043e\u043b/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-4sbni1"
+      binary: "C:/Users/liber/OneDrive/\u0420\u0430\u0431\u043e\u0447\u0438\u0439 \u0441\u0442\u043e\u043b/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-4sbni1"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/liber/OneDrive/Рабочий стол/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-4sbni1'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_d30c8.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.4.1+9a89d02ff for .NET Framework
+        Сборка начата 26.11.2023 17:12:24.
+        Проект "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4sbni1\\cmTC_d30c8.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        PrepareForBuild:
+          Создание каталога "cmTC_d30c8.dir\\Debug\\".
+          Создание каталога "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4sbni1\\Debug\\".
+          Создание каталога "cmTC_d30c8.dir\\Debug\\cmTC_d30c8.tlog\\".
+        InitializeBuildStatus:
+          Создание "cmTC_d30c8.dir\\Debug\\cmTC_d30c8.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d30c8.dir\\Debug\\\\" /Fd"cmTC_d30c8.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
+          Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.34.31937 для x64
+          CMakeCXXCompilerABI.cpp
+          (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d30c8.dir\\Debug\\\\" /Fd"cmTC_d30c8.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4sbni1\\Debug\\cmTC_d30c8.exe" /INCREMENTAL /ILK:"cmTC_d30c8.dir\\Debug\\cmTC_d30c8.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/liber/OneDrive/Рабочий стол/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-4sbni1/Debug/cmTC_d30c8.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/liber/OneDrive/Рабочий стол/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-4sbni1/Debug/cmTC_d30c8.lib" /MACHINE:X64  /machine:x64 cmTC_d30c8.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_d30c8.vcxproj -> C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4sbni1\\Debug\\cmTC_d30c8.exe
+        FinalizeBuildStatus:
+          Файл "cmTC_d30c8.dir\\Debug\\cmTC_d30c8.tlog\\unsuccessfulbuild" удаляется.
+          Обращение к "cmTC_d30c8.dir\\Debug\\cmTC_d30c8.tlog\\cmTC_d30c8.lastbuildstate".
+        Сборка проекта "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4sbni1\\cmTC_d30c8.vcxproj" завершена (целевые объекты по умолчанию).
+        
+        Сборка успешно завершена.
+            Предупреждений: 0
+            Ошибок: 0
+        
+        Прошло времени 00:00:00.58
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "external/glfw/CMakeLists.txt:56 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "C:/Users/liber/OneDrive/\u0420\u0430\u0431\u043e\u0447\u0438\u0439 \u0441\u0442\u043e\u043b/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-gmdpde"
+      binary: "C:/Users/liber/OneDrive/\u0420\u0430\u0431\u043e\u0447\u0438\u0439 \u0441\u0442\u043e\u043b/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-gmdpde"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/liber/OneDrive/\u0420\u0430\u0431\u043e\u0447\u0438\u0439 \u0441\u0442\u043e\u043b/OpenGL/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/liber/OneDrive/Рабочий стол/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-gmdpde'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_76886.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.4.1+9a89d02ff for .NET Framework
+        Сборка начата 26.11.2023 17:12:25.
+        Проект "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gmdpde\\cmTC_76886.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        PrepareForBuild:
+          Создание каталога "cmTC_76886.dir\\Debug\\".
+          Создание каталога "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gmdpde\\Debug\\".
+          Создание каталога "cmTC_76886.dir\\Debug\\cmTC_76886.tlog\\".
+        InitializeBuildStatus:
+          Создание "cmTC_76886.dir\\Debug\\cmTC_76886.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_76886.dir\\Debug\\\\" /Fd"cmTC_76886.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gmdpde\\src.c"
+          Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.34.31937 для x64
+          src.c
+          (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_76886.dir\\Debug\\\\" /Fd"cmTC_76886.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gmdpde\\src.c"
+        C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gmdpde\\src.c(1,10): fatal  error C1083: Не удается открыть файл включение: pthread.h: No such file or directory, [C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gmdpde\\cmTC_76886.vcxproj]
+        Сборка проекта "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gmdpde\\cmTC_76886.vcxproj" завершена (целевые объекты по умолчанию) с ошибкой.
+        
+        Ошибка сборки.
+        
+        "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gmdpde\\cmTC_76886.vcxproj" (целевой объект по умолчанию) (1) ->
+        (Целевой объект ClCompile) -> 
+          C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gmdpde\\src.c(1,10): fatal  error C1083: Не удается открыть файл включение: pthread.h: No such file or directory, [C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gmdpde\\cmTC_76886.vcxproj]
+        
+            Предупреждений: 0
+            Ошибок: 1
+        
+        Прошло времени 00:00:00.39
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "external/glfw/CMakeLists.txt:56 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "C:/Users/liber/OneDrive/\u0420\u0430\u0431\u043e\u0447\u0438\u0439 \u0441\u0442\u043e\u043b/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-2p5d9m"
+      binary: "C:/Users/liber/OneDrive/\u0420\u0430\u0431\u043e\u0447\u0438\u0439 \u0441\u0442\u043e\u043b/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-2p5d9m"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/liber/OneDrive/\u0420\u0430\u0431\u043e\u0447\u0438\u0439 \u0441\u0442\u043e\u043b/OpenGL/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/liber/OneDrive/Рабочий стол/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-2p5d9m'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_19649.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.4.1+9a89d02ff for .NET Framework
+        Сборка начата 26.11.2023 17:12:26.
+        Проект "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2p5d9m\\cmTC_19649.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        PrepareForBuild:
+          Создание каталога "cmTC_19649.dir\\Debug\\".
+          Создание каталога "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2p5d9m\\Debug\\".
+          Создание каталога "cmTC_19649.dir\\Debug\\cmTC_19649.tlog\\".
+        InitializeBuildStatus:
+          Создание "cmTC_19649.dir\\Debug\\cmTC_19649.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_19649.dir\\Debug\\\\" /Fd"cmTC_19649.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2p5d9m\\CheckFunctionExists.c"
+          Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.34.31937 для x64
+          CheckFunctionExists.c
+          (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_19649.dir\\Debug\\\\" /Fd"cmTC_19649.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2p5d9m\\CheckFunctionExists.c"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2p5d9m\\Debug\\cmTC_19649.exe" /INCREMENTAL /ILK:"cmTC_19649.dir\\Debug\\cmTC_19649.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/liber/OneDrive/Рабочий стол/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-2p5d9m/Debug/cmTC_19649.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/liber/OneDrive/Рабочий стол/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-2p5d9m/Debug/cmTC_19649.lib" /MACHINE:X64  /machine:x64 cmTC_19649.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: не удается открыть файл "pthreads.lib" [C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2p5d9m\\cmTC_19649.vcxproj]
+        Сборка проекта "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2p5d9m\\cmTC_19649.vcxproj" завершена (целевые объекты по умолчанию) с ошибкой.
+        
+        Ошибка сборки.
+        
+        "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2p5d9m\\cmTC_19649.vcxproj" (целевой объект по умолчанию) (1) ->
+        (Целевой объект Link) -> 
+          LINK : fatal error LNK1104: не удается открыть файл "pthreads.lib" [C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2p5d9m\\cmTC_19649.vcxproj]
+        
+            Предупреждений: 0
+            Ошибок: 1
+        
+        Прошло времени 00:00:00.47
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "external/glfw/CMakeLists.txt:56 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "C:/Users/liber/OneDrive/\u0420\u0430\u0431\u043e\u0447\u0438\u0439 \u0441\u0442\u043e\u043b/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-20jsni"
+      binary: "C:/Users/liber/OneDrive/\u0420\u0430\u0431\u043e\u0447\u0438\u0439 \u0441\u0442\u043e\u043b/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-20jsni"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/liber/OneDrive/\u0420\u0430\u0431\u043e\u0447\u0438\u0439 \u0441\u0442\u043e\u043b/OpenGL/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/liber/OneDrive/Рабочий стол/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-20jsni'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_d31eb.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.4.1+9a89d02ff for .NET Framework
+        Сборка начата 26.11.2023 17:12:26.
+        Проект "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-20jsni\\cmTC_d31eb.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        PrepareForBuild:
+          Создание каталога "cmTC_d31eb.dir\\Debug\\".
+          Создание каталога "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-20jsni\\Debug\\".
+          Создание каталога "cmTC_d31eb.dir\\Debug\\cmTC_d31eb.tlog\\".
+        InitializeBuildStatus:
+          Создание "cmTC_d31eb.dir\\Debug\\cmTC_d31eb.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d31eb.dir\\Debug\\\\" /Fd"cmTC_d31eb.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-20jsni\\CheckFunctionExists.c"
+          Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.34.31937 для x64
+          CheckFunctionExists.c
+          (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d31eb.dir\\Debug\\\\" /Fd"cmTC_d31eb.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-20jsni\\CheckFunctionExists.c"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-20jsni\\Debug\\cmTC_d31eb.exe" /INCREMENTAL /ILK:"cmTC_d31eb.dir\\Debug\\cmTC_d31eb.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/liber/OneDrive/Рабочий стол/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-20jsni/Debug/cmTC_d31eb.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/liber/OneDrive/Рабочий стол/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-20jsni/Debug/cmTC_d31eb.lib" /MACHINE:X64  /machine:x64 cmTC_d31eb.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: не удается открыть файл "pthread.lib" [C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-20jsni\\cmTC_d31eb.vcxproj]
+        Сборка проекта "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-20jsni\\cmTC_d31eb.vcxproj" завершена (целевые объекты по умолчанию) с ошибкой.
+        
+        Ошибка сборки.
+        
+        "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-20jsni\\cmTC_d31eb.vcxproj" (целевой объект по умолчанию) (1) ->
+        (Целевой объект Link) -> 
+          LINK : fatal error LNK1104: не удается открыть файл "pthread.lib" [C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-20jsni\\cmTC_d31eb.vcxproj]
+        
+            Предупреждений: 0
+            Ошибок: 1
+        
+        Прошло времени 00:00:00.48
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake:211 (message)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      The system is: Windows - 10.0.19045 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      MSBuild version 17.4.1+9a89d02ff for .NET Framework
+      Сборка начата 27.11.2023 5:29:47.
+      Проект "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\3.27.0\\CompilerIdC\\CompilerIdC.vcxproj" в узле 1 (целевые объекты по умолчанию).
+      PrepareForBuild:
+        Создание каталога "Debug\\".
+        Создание каталога "Debug\\CompilerIdC.tlog\\".
+      InitializeBuildStatus:
+        Создание "Debug\\CompilerIdC.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\3.27.0\\CompilerIdC\\CompilerIdC.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Файл "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" удаляется.
+        Обращение к "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
+      Сборка проекта "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\3.27.0\\CompilerIdC\\CompilerIdC.vcxproj" завершена (целевые объекты по умолчанию).
+      
+      Сборка успешно завершена.
+          Предупреждений: 0
+          Ошибок: 0
+      
+      Прошло времени 00:00:00.82
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/Users/liber/OneDrive/Рабочий стол/OpenGL/build/CMakeFiles/3.27.0/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      MSBuild version 17.4.1+9a89d02ff for .NET Framework
+      Сборка начата 27.11.2023 5:29:48.
+      Проект "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\3.27.0\\CompilerIdCXX\\CompilerIdCXX.vcxproj" в узле 1 (целевые объекты по умолчанию).
+      PrepareForBuild:
+        Создание каталога "Debug\\".
+        Создание каталога "Debug\\CompilerIdCXX.tlog\\".
+      InitializeBuildStatus:
+        Создание "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\3.27.0\\CompilerIdCXX\\CompilerIdCXX.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Файл "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" удаляется.
+        Обращение к "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
+      Сборка проекта "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\3.27.0\\CompilerIdCXX\\CompilerIdCXX.vcxproj" завершена (целевые объекты по умолчанию).
+      
+      Сборка успешно завершена.
+          Предупреждений: 0
+          Ошибок: 0
+      
+      Прошло времени 00:00:00.60
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/liber/OneDrive/Рабочий стол/OpenGL/build/CMakeFiles/3.27.0/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/liber/OneDrive/\u0420\u0430\u0431\u043e\u0447\u0438\u0439 \u0441\u0442\u043e\u043b/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-zzz3g9"
+      binary: "C:/Users/liber/OneDrive/\u0420\u0430\u0431\u043e\u0447\u0438\u0439 \u0441\u0442\u043e\u043b/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-zzz3g9"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/liber/OneDrive/Рабочий стол/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-zzz3g9'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_1b12c.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.4.1+9a89d02ff for .NET Framework
+        Сборка начата 27.11.2023 5:29:49.
+        Проект "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zzz3g9\\cmTC_1b12c.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        PrepareForBuild:
+          Создание каталога "cmTC_1b12c.dir\\Debug\\".
+          Создание каталога "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zzz3g9\\Debug\\".
+          Создание каталога "cmTC_1b12c.dir\\Debug\\cmTC_1b12c.tlog\\".
+        InitializeBuildStatus:
+          Создание "cmTC_1b12c.dir\\Debug\\cmTC_1b12c.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1b12c.dir\\Debug\\\\" /Fd"cmTC_1b12c.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"
+          Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.34.31937 для x64
+          CMakeCCompilerABI.c
+          (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1b12c.dir\\Debug\\\\" /Fd"cmTC_1b12c.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zzz3g9\\Debug\\cmTC_1b12c.exe" /INCREMENTAL /ILK:"cmTC_1b12c.dir\\Debug\\cmTC_1b12c.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/liber/OneDrive/Рабочий стол/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-zzz3g9/Debug/cmTC_1b12c.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/liber/OneDrive/Рабочий стол/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-zzz3g9/Debug/cmTC_1b12c.lib" /MACHINE:X64  /machine:x64 cmTC_1b12c.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_1b12c.vcxproj -> C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zzz3g9\\Debug\\cmTC_1b12c.exe
+        FinalizeBuildStatus:
+          Файл "cmTC_1b12c.dir\\Debug\\cmTC_1b12c.tlog\\unsuccessfulbuild" удаляется.
+          Обращение к "cmTC_1b12c.dir\\Debug\\cmTC_1b12c.tlog\\cmTC_1b12c.lastbuildstate".
+        Сборка проекта "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zzz3g9\\cmTC_1b12c.vcxproj" завершена (целевые объекты по умолчанию).
+        
+        Сборка успешно завершена.
+            Предупреждений: 0
+            Ошибок: 0
+        
+        Прошло времени 00:00:00.58
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/liber/OneDrive/\u0420\u0430\u0431\u043e\u0447\u0438\u0439 \u0441\u0442\u043e\u043b/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-axiuyj"
+      binary: "C:/Users/liber/OneDrive/\u0420\u0430\u0431\u043e\u0447\u0438\u0439 \u0441\u0442\u043e\u043b/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-axiuyj"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/liber/OneDrive/Рабочий стол/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-axiuyj'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_3c582.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.4.1+9a89d02ff for .NET Framework
+        Сборка начата 27.11.2023 5:29:50.
+        Проект "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-axiuyj\\cmTC_3c582.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        PrepareForBuild:
+          Создание каталога "cmTC_3c582.dir\\Debug\\".
+          Создание каталога "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-axiuyj\\Debug\\".
+          Создание каталога "cmTC_3c582.dir\\Debug\\cmTC_3c582.tlog\\".
+        InitializeBuildStatus:
+          Создание "cmTC_3c582.dir\\Debug\\cmTC_3c582.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3c582.dir\\Debug\\\\" /Fd"cmTC_3c582.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
+          Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.34.31937 для x64
+          (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+          CMakeCXXCompilerABI.cpp
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3c582.dir\\Debug\\\\" /Fd"cmTC_3c582.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-axiuyj\\Debug\\cmTC_3c582.exe" /INCREMENTAL /ILK:"cmTC_3c582.dir\\Debug\\cmTC_3c582.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/liber/OneDrive/Рабочий стол/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-axiuyj/Debug/cmTC_3c582.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/liber/OneDrive/Рабочий стол/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-axiuyj/Debug/cmTC_3c582.lib" /MACHINE:X64  /machine:x64 cmTC_3c582.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_3c582.vcxproj -> C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-axiuyj\\Debug\\cmTC_3c582.exe
+        FinalizeBuildStatus:
+          Файл "cmTC_3c582.dir\\Debug\\cmTC_3c582.tlog\\unsuccessfulbuild" удаляется.
+          Обращение к "cmTC_3c582.dir\\Debug\\cmTC_3c582.tlog\\cmTC_3c582.lastbuildstate".
+        Сборка проекта "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-axiuyj\\cmTC_3c582.vcxproj" завершена (целевые объекты по умолчанию).
+        
+        Сборка успешно завершена.
+            Предупреждений: 0
+            Ошибок: 0
+        
+        Прошло времени 00:00:00.58
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "external/glfw/CMakeLists.txt:56 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "C:/Users/liber/OneDrive/\u0420\u0430\u0431\u043e\u0447\u0438\u0439 \u0441\u0442\u043e\u043b/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-926m6i"
+      binary: "C:/Users/liber/OneDrive/\u0420\u0430\u0431\u043e\u0447\u0438\u0439 \u0441\u0442\u043e\u043b/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-926m6i"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/liber/OneDrive/\u0420\u0430\u0431\u043e\u0447\u0438\u0439 \u0441\u0442\u043e\u043b/OpenGL/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/liber/OneDrive/Рабочий стол/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-926m6i'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_b2243.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.4.1+9a89d02ff for .NET Framework
+        Сборка начата 27.11.2023 5:29:51.
+        Проект "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-926m6i\\cmTC_b2243.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        PrepareForBuild:
+          Создание каталога "cmTC_b2243.dir\\Debug\\".
+          Создание каталога "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-926m6i\\Debug\\".
+          Создание каталога "cmTC_b2243.dir\\Debug\\cmTC_b2243.tlog\\".
+        InitializeBuildStatus:
+          Создание "cmTC_b2243.dir\\Debug\\cmTC_b2243.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b2243.dir\\Debug\\\\" /Fd"cmTC_b2243.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-926m6i\\src.c"
+          Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.34.31937 для x64
+          src.c
+          (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b2243.dir\\Debug\\\\" /Fd"cmTC_b2243.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-926m6i\\src.c"
+        C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-926m6i\\src.c(1,10): fatal  error C1083: Не удается открыть файл включение: pthread.h: No such file or directory, [C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-926m6i\\cmTC_b2243.vcxproj]
+        Сборка проекта "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-926m6i\\cmTC_b2243.vcxproj" завершена (целевые объекты по умолчанию) с ошибкой.
+        
+        Ошибка сборки.
+        
+        "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-926m6i\\cmTC_b2243.vcxproj" (целевой объект по умолчанию) (1) ->
+        (Целевой объект ClCompile) -> 
+          C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-926m6i\\src.c(1,10): fatal  error C1083: Не удается открыть файл включение: pthread.h: No such file or directory, [C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-926m6i\\cmTC_b2243.vcxproj]
+        
+            Предупреждений: 0
+            Ошибок: 1
+        
+        Прошло времени 00:00:00.38
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "external/glfw/CMakeLists.txt:56 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "C:/Users/liber/OneDrive/\u0420\u0430\u0431\u043e\u0447\u0438\u0439 \u0441\u0442\u043e\u043b/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-tomcqy"
+      binary: "C:/Users/liber/OneDrive/\u0420\u0430\u0431\u043e\u0447\u0438\u0439 \u0441\u0442\u043e\u043b/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-tomcqy"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/liber/OneDrive/\u0420\u0430\u0431\u043e\u0447\u0438\u0439 \u0441\u0442\u043e\u043b/OpenGL/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/liber/OneDrive/Рабочий стол/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-tomcqy'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_98d77.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.4.1+9a89d02ff for .NET Framework
+        Сборка начата 27.11.2023 5:29:52.
+        Проект "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tomcqy\\cmTC_98d77.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        PrepareForBuild:
+          Создание каталога "cmTC_98d77.dir\\Debug\\".
+          Создание каталога "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tomcqy\\Debug\\".
+          Создание каталога "cmTC_98d77.dir\\Debug\\cmTC_98d77.tlog\\".
+        InitializeBuildStatus:
+          Создание "cmTC_98d77.dir\\Debug\\cmTC_98d77.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_98d77.dir\\Debug\\\\" /Fd"cmTC_98d77.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tomcqy\\CheckFunctionExists.c"
+          Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.34.31937 для x64
+          CheckFunctionExists.c
+          (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_98d77.dir\\Debug\\\\" /Fd"cmTC_98d77.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tomcqy\\CheckFunctionExists.c"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tomcqy\\Debug\\cmTC_98d77.exe" /INCREMENTAL /ILK:"cmTC_98d77.dir\\Debug\\cmTC_98d77.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/liber/OneDrive/Рабочий стол/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-tomcqy/Debug/cmTC_98d77.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/liber/OneDrive/Рабочий стол/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-tomcqy/Debug/cmTC_98d77.lib" /MACHINE:X64  /machine:x64 cmTC_98d77.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: не удается открыть файл "pthreads.lib" [C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tomcqy\\cmTC_98d77.vcxproj]
+        Сборка проекта "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tomcqy\\cmTC_98d77.vcxproj" завершена (целевые объекты по умолчанию) с ошибкой.
+        
+        Ошибка сборки.
+        
+        "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tomcqy\\cmTC_98d77.vcxproj" (целевой объект по умолчанию) (1) ->
+        (Целевой объект Link) -> 
+          LINK : fatal error LNK1104: не удается открыть файл "pthreads.lib" [C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tomcqy\\cmTC_98d77.vcxproj]
+        
+            Предупреждений: 0
+            Ошибок: 1
+        
+        Прошло времени 00:00:00.47
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "external/glfw/CMakeLists.txt:56 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "C:/Users/liber/OneDrive/\u0420\u0430\u0431\u043e\u0447\u0438\u0439 \u0441\u0442\u043e\u043b/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-bfomwr"
+      binary: "C:/Users/liber/OneDrive/\u0420\u0430\u0431\u043e\u0447\u0438\u0439 \u0441\u0442\u043e\u043b/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-bfomwr"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/liber/OneDrive/\u0420\u0430\u0431\u043e\u0447\u0438\u0439 \u0441\u0442\u043e\u043b/OpenGL/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/liber/OneDrive/Рабочий стол/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-bfomwr'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_76a08.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.4.1+9a89d02ff for .NET Framework
+        Сборка начата 27.11.2023 5:29:52.
+        Проект "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bfomwr\\cmTC_76a08.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        PrepareForBuild:
+          Создание каталога "cmTC_76a08.dir\\Debug\\".
+          Создание каталога "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bfomwr\\Debug\\".
+          Создание каталога "cmTC_76a08.dir\\Debug\\cmTC_76a08.tlog\\".
+        InitializeBuildStatus:
+          Создание "cmTC_76a08.dir\\Debug\\cmTC_76a08.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_76a08.dir\\Debug\\\\" /Fd"cmTC_76a08.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bfomwr\\CheckFunctionExists.c"
+          Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.34.31937 для x64
+          CheckFunctionExists.c
+          (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_76a08.dir\\Debug\\\\" /Fd"cmTC_76a08.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bfomwr\\CheckFunctionExists.c"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bfomwr\\Debug\\cmTC_76a08.exe" /INCREMENTAL /ILK:"cmTC_76a08.dir\\Debug\\cmTC_76a08.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/liber/OneDrive/Рабочий стол/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-bfomwr/Debug/cmTC_76a08.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/liber/OneDrive/Рабочий стол/OpenGL/build/CMakeFiles/CMakeScratch/TryCompile-bfomwr/Debug/cmTC_76a08.lib" /MACHINE:X64  /machine:x64 cmTC_76a08.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: не удается открыть файл "pthread.lib" [C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bfomwr\\cmTC_76a08.vcxproj]
+        Сборка проекта "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bfomwr\\cmTC_76a08.vcxproj" завершена (целевые объекты по умолчанию) с ошибкой.
+        
+        Ошибка сборки.
+        
+        "C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bfomwr\\cmTC_76a08.vcxproj" (целевой объект по умолчанию) (1) ->
+        (Целевой объект Link) -> 
+          LINK : fatal error LNK1104: не удается открыть файл "pthread.lib" [C:\\Users\\liber\\OneDrive\\Рабочий стол\\OpenGL\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bfomwr\\cmTC_76a08.vcxproj]
+        
+            Предупреждений: 0
+            Ошибок: 1
+        
+        Прошло времени 00:00:00.50
+        
+      exitCode: 1
+...

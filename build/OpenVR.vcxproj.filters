@@ -4,11 +4,28 @@
     <ClCompile Include="C:\Users\liber\OneDrive\Рабочий стол\OpenGL\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\liber\OneDrive\Рабочий стол\OpenGL\src\Renderer\ShaderProgram.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\liber\OneDrive\Рабочий стол\OpenGL\src\Resources\ResourceManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\liber\OneDrive\Рабочий стол\OpenGL\src\Renderer\ShaderProgram.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\liber\OneDrive\Рабочий стол\OpenGL\src\Resources\ResourceManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Users\liber\OneDrive\Рабочий стол\OpenGL\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{788016A2-4E04-39EE-B989-E92272E1BFC7}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Source Files">
       <UniqueIdentifier>{8C3A8311-1E65-3166-A286-CF588393AD28}</UniqueIdentifier>
     </Filter>
